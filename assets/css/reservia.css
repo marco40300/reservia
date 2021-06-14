@@ -407,7 +407,25 @@ nav li a:hover
 
 .activityFrame
 {
-    display: grid;
+    display: flex;
+    flex-direction: column;
+
+    grid-template-rows: 1fr 50px;
+    height: 100%;
+    box-sizing: border-box;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 0 7px #c1c1c1;
+}
+.activityFrame div
+{
+    height: 125px
+}
+.activityFrame2
+{
+    display: flex;
+    flex-direction: column;
+
     grid-template-rows: 1fr 50px;
     height: 100%;
     box-sizing: border-box;
@@ -416,7 +434,17 @@ nav li a:hover
     box-shadow: 0 0 7px #c1c1c1;
 }
 
-.activityFrame img
+.activityframe2 div
+{
+    height: 125%
+}
+.activityFrame2 div img
+{
+    width: 100%;
+    object-fit: cover;
+    height: 70%;
+}
+.activityFrame div img
 {
     width: 100%;
     object-fit: cover;
@@ -430,6 +458,37 @@ nav li a:hover
     padding-left: 10px;
     font-size: 1.1rem;
     font-weight: 700;
+    padding: 20px;
+}
+.activityDescription2
+{
+    align-self: center;
+    background-color: #fff;
+    padding-left: 10px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    padding: 20px;
+    float: left;
+    position: absolute;
+    top: 1500px;
+    right: 440px;
+
+    
+}
+.activityDescription3
+{
+    align-self: center;
+    background-color: #fff;
+    padding-left: 10px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    padding: 20px;
+    float: left;
+    position: absolute;
+    top: 1500px;
+    right: 1250px;
+
+    
 }
 
 /* Footer */
@@ -556,6 +615,7 @@ footer a:hover
     {
         font-size: 1.1rem;
     }
+    
 
     /* Footer - Tablet */
 
