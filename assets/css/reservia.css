@@ -393,7 +393,7 @@ nav li a:hover
 .row12
 {
     grid-row-end: span 18;
-    height: 500px;
+    height: 350px;
 }
 
 .row6
@@ -427,19 +427,21 @@ nav li a:hover
     display: flex;
     flex-direction: column;
     grid-template-rows: 1fr 50px;  
-    height: 350px;
+    height: 415px;
     box-sizing: border-box;
     border-radius: 15px;
     overflow: hidden;
     box-shadow: 0 0 7px #c1c1c1;
 }
-
-
-.activityFrame2 img
+.activityFrame2 div
+{
+    height: 300px
+}
+.activityFrame2 div img
 {
     width: 100%;
     object-fit: cover;
-    
+    height: 100%;
 }
 .activityFrame div img
 {
@@ -457,7 +459,15 @@ nav li a:hover
     font-weight: 700;
     padding: 20px;
 }
-
+.activityDescription2
+{
+    align-self: center;
+    background-color: #fff;
+    padding-left: 10px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    padding: 20px;
+}
 
 /* Footer */
 
