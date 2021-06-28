@@ -661,6 +661,10 @@ footer a:hover
     {
         border-color: blue;
     }
+    .active a 
+    {
+        color: blue;
+    }
     nav li a
     {
         padding: inherit;
