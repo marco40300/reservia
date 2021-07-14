@@ -39,7 +39,10 @@ h2
 {
     display: flex;
 }
-
+.containerInfo
+{
+    font-weight: 400;
+}
 .euros
 {
     font-weight: 600;
@@ -55,7 +58,7 @@ header
 
 .logo
 {
-    margin-top: 30px;
+    margin-top: 25px;
     flex: 1;
 }
 
@@ -285,6 +288,8 @@ nav li a:hover
 .hotelDescription p
 {
     margin: 0;
+    font-size: 0.9rem;
+    font-weight: 400;
 }
 
 .hotelRate
@@ -370,7 +375,7 @@ nav li a:hover
 {
     margin: 0;
     font-weight: 700;
-    font-size: 1.1rem;
+    font-size: 0.95rem;
 }
 
 .popularDescription .hotelName + p
@@ -489,11 +494,18 @@ footer li
 {
     margin-bottom: 15px;
 }
-
+footer a
+{
+    font-weight: 400;
+}
 footer a:hover
 {
     font-weight: 600;
     color: #0065FC;
+}
+footer h3
+{
+    font-weight: 700;
 }
 
 @media only screen and (max-width: 1280px){
@@ -662,11 +674,11 @@ footer a:hover
     }
     .active 
     {
-        border-color: blue;
+        border-color: #0065FC;
     }
     .active a 
     {
-        color: blue;
+        color: #0065FC;
     }
     nav li a
     {
