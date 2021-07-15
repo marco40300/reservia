@@ -388,94 +388,102 @@ nav li a:hover
 
 .activitiesTab
 {
-    display: grid;
-    grid-template: repeat(12, 1fr) / repeat(4, 1fr);
-    gap: 36.3px;
-    height: 450px;
-    grid-auto-flow: column;
+    display: flex;
+   justify-content: space-between;
 }
+.row1, .row2, .row3, .row4
+    {
+        width: 23%;
+    }
+    .row2, .row3 figure 
+    {
+        margin-bottom: 25px!important;
+    }
+    .fort, .basilique
+    {
+        display: flex;
+        height: 150px;
+        width: inherit;
+    }
+    .ile, .parc
+    {
+        display:flex;
+        width: 100%;
+    }
+    .row2 .ile img 
+    {
+        height: 85px;
+        width: 100%;
+        border-radius: 20px 20px 0 0px;
+        object-fit: cover;
+        object-position: 10% 30%;
+    }
+    
+
+    .row2 .fort img 
+    {
+        width: 100%;
+        border-radius: 20px 20px 0 0px;
+        object-fit: cover;
+    }
+    .row4 .basilique img 
+    {
+        width: 100%;
+        border-radius: 20px 20px 0 0px;
+        object-fit: cover;
+    }
+    
+
+    .row4 .parc img 
+    {
+        height: 85px;
+        width: 100%;
+        border-radius: 20px 20px 0 0px;
+        object-fit: cover;
+        object-position: 10% 30%;
+    
+    }
+    
+    .activitiesTab figure 
+    {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        margin: 0;
+    }
+    .row1 img
+     {
+        width: 100%;
+        height: 310px;
+        border-radius: 20px 20px 0 0px;
+        object-fit: cover;
+        object-position: 60% 80%;
+    }
+    .row3 img
+     {
+        width: 100%;
+        height: 310px;
+        border-radius: 20px 20px 0 0px;
+        object-fit: cover;
+        object-position: 60% 80%;
+    }
+    .activitiesTab figcaption {
+        padding-left: 5px;
+        border-radius: 0 0 20px 20px;
+        background-color: white;
+        width: 100%;
+        box-shadow: 1px 1px 15px rgb(111 111 111);
+    }
+    
+    
+    
 .activities
 {
     margin-top: 60px;
 }
-.row12
-{
-    grid-row-end: span 18;
-    height: 350px;
-}
 
-.row6
-{
-    grid-row-end: span 6;
-}
 
-.row5
-{
-    grid-row-end: span 6;
-}
 
-.activityFrame
-{
-    display: flex;
-    flex-direction: column;
-
-    grid-template-rows: 1fr 50px;
-    height: 100%;
-    box-sizing: border-box;
-    border-radius: 15px;
-    overflow: hidden;
-    box-shadow: 0 0 7px #c1c1c1;
-}
-.activityFrame div
-{
-    height: 125px
-}
-.activityFrame2
-{
-    display: flex;
-    flex-direction: column;
-    grid-template-rows: 1fr 50px;  
-    height: 400px;
-    box-sizing: border-box;
-    border-radius: 15px;
-    overflow: hidden;
-    box-shadow: 0 0 7px #c1c1c1;
-}
-.activityFrame2 div
-{
-    height: 345px
-}
-.activityFrame2 div img
-{
-    width: 100%;
-    object-fit: cover;
-    height: 100%;
-}
-.activityFrame div img
-{
-    width: 100%;
-    object-fit: cover;
-    height: 100%;
-}
-
-.activityDescription
-{
-    
-    background-color: #fff;
-    padding-left: 10px;
-    font-size: 1.1rem;
-    font-weight: 700;
-    padding: 20px;
-}
-.activityDescription
-{
-    
-    background-color: #fff;
-    padding-left: 10px;
-    font-size: 1.1rem;
-    font-weight: 700;
-    padding: 20px;
-}
 
 /* Footer */
 
@@ -598,16 +606,12 @@ footer h3
         height: 190px;
     }
 
-    .row12, .row5, .row6
+    .row1, .row2, .row3, .row4
     {
-        grid-row-end: span 4;
-        grid-column-end: span 2;
+        width: 23%;
     }
 
-    .activityDescription
-    {
-        font-size: 1.1rem;
-    }
+    
     
 
     /* Footer - Tablet */
@@ -819,10 +823,9 @@ footer h3
         gap: 24px;
     }
 
-    .row12, .row5, .row6
+    .row1, .row2, .row3, .row4
     {
-        grid-row-end: span 1;
-        grid-column-end: span 1;
+        width: 100%;
     }
 
     /* Footer - Mobile */
